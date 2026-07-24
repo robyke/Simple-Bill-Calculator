@@ -1,0 +1,17 @@
+# Simple Bill Calculator
+# This program calculates the total cost of items purchased.
+
+item_name = input("Enter the name of the item: ")
+price = float(input("Enter the price of one item: "))
+quantity = int(input("Enter the quantity you want: "))
+
+# Calculate the total cost
+total = price * quantity
+
+# Display the final result using an f-string
+print("\n--- Bill Summary ---")
+print(f"Item: {item_name}")
+print(f"Quantity: {quantity}")
+print(f"Price per item: ${price:.2f}")
+print(f"Total cost: ${total:.2f}")
+print(f"{quantity} {item_name}(s) at ${price:.2f} each = ${total:.2f}")
